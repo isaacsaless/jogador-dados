@@ -1,0 +1,90 @@
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.elements > h1{
+    font-size: 40pt;
+    margin: 0px 5px 0px;
+}
+
+.input-section > label{
+    font-size: 15pt;
+}
+
+.input-section > input{
+    width: 60%;
+    height: 25px;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.elements > button{
+    background-color: #76e1ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 27px;
+    width: 30%;
+    font-size: 14pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-section > input{
+    margin: 5px 0px 10px;
+}
+
+.imgs{
+    width: 50vw;
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 5% 0px 40px;
+    box-shadow: 2px 2px 7px hsla(0, 0%, 0%, 0.3);
+}
+
+.imgs > img{
+    width: 70px;
+    padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #c2c9d2;
+  }
+
+  @media only screen and (max-width:600px){
+    .imgs{
+        width: 80%;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+      }
+    .html{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+  }
